@@ -7,11 +7,11 @@ def df__save_to_shared_volume(df, file_name: str, workspace_name: str = "default
 
     directory = directories[dataset_type]
 
-
     if not len(file_name):
         file_name = workspace_name
         if dataset_type == "training":
-            now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            from datetime import datetime
+            now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             file_name = f"{file_name}-{now}"
 
     if not file_name.endswith(".csv"):
@@ -19,7 +19,8 @@ def df__save_to_shared_volume(df, file_name: str, workspace_name: str = "default
 
 
     if dataset_type == "scoring":
-        now = datetime.datetime.now().strftime("%Y-%m-%d")
+        from datetime import datetime
+        now = datetime.now().strftime("%Y-%m-%d")
         directory = f"{directory}/{now}"
 
     path = f"dataroot/projects/{workspace_name}/datasets/{directory}/{file_name}"
