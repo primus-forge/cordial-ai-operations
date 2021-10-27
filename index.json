@@ -1,0 +1,17 @@
+{
+  "save_to_shared_volume": {
+    "text": "Save to shared volume",
+    "function": "df__save_to_shared_volume",
+    "command": "save_to_shared_volume",
+    "preview": false,
+    "path": "DATASET/SAVE",
+    "parameters": {
+      "file_name": {
+        "label": "File name",
+        "type": "string",
+        "value": "",
+        "placeholder": "dataset.csv"
+      }
+    }
+  }
+}
