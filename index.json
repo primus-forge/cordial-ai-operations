@@ -21,7 +21,7 @@
           "training": "Training"
         }
       },
-      "workspaceName": {
+      "workspace_name": {
         "label": "Workspace",
         "type": "string",
         "hidden": true
