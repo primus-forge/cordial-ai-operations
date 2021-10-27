@@ -11,6 +11,11 @@
         "type": "string",
         "value": "",
         "placeholder": "dataset.csv"
+      },
+      "workspaceName": {
+        "label": "Workspace",
+        "type": "string",
+        "hidden": true
       }
     }
   }
