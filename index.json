@@ -12,6 +12,15 @@
         "value": "",
         "placeholder": "dataset.csv"
       },
+      "dataset_type": {
+        "label": "Save for...",
+        "type": "string",
+        "value": "scoring",
+        "items": {
+          "scoring": "Scoring",
+          "training": "Training"
+        }
+      },
       "workspaceName": {
         "label": "Workspace",
         "type": "string",
