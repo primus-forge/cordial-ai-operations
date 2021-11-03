@@ -21,7 +21,7 @@
     }
   },
   "save_for_scoring": {
-    "text": "Save to shared volume",
+    "text": "Save for scoring",
     "function": "df__save_for_scoring",
     "command": "save_for_scoring",
     "preview": false,
