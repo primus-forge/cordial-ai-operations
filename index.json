@@ -4,6 +4,7 @@
     "function": "df__save_for_training",
     "command": "save_for_training",
     "preview": false,
+    "save": true,
     "path": "DATASET/SAVE",
     "parameters": {
       "file_name": {
@@ -24,6 +25,7 @@
     "function": "df__save_for_scoring",
     "command": "save_for_scoring",
     "preview": false,
+    "save": true,
     "path": "DATASET/SAVE",
     "parameters": {
       "file_name": {
