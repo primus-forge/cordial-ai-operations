@@ -1,8 +1,8 @@
 {
-  "save_to_shared_volume": {
-    "text": "Save to shared volume",
-    "function": "df__save_to_shared_volume",
-    "command": "save_to_shared_volume",
+  "save_for_training": {
+    "text": "Save for training",
+    "function": "df__save_for_training",
+    "command": "save_for_training",
     "preview": false,
     "path": "DATASET/SAVE",
     "parameters": {
@@ -12,14 +12,25 @@
         "value": "",
         "placeholder": "dataset.csv"
       },
-      "dataset_type": {
-        "label": "Save for...",
+      "workspace_name": {
+        "label": "Workspace",
         "type": "string",
-        "value": "scoring",
-        "items": {
-          "scoring": "Scoring",
-          "training": "Training"
-        }
+        "hidden": true
+      }
+    }
+  },
+  "save_for_scoring": {
+    "text": "Save to shared volume",
+    "function": "df__save_for_scoring",
+    "command": "save_for_scoring",
+    "preview": false,
+    "path": "DATASET/SAVE",
+    "parameters": {
+      "file_name": {
+        "label": "File name",
+        "type": "string",
+        "value": "",
+        "placeholder": "dataset.csv"
       },
       "workspace_name": {
         "label": "Workspace",
