@@ -9,7 +9,10 @@ def df__save_for_scoring(df, file_name: str, workspace_name: str = "default"):
     from datetime import datetime
     now = datetime.now().strftime("%Y-%m-%d")
 
-    path = f"/dataroot/projects/{workspace_name}/datasets/prediction/{now}/{file_name}"
+    import os
+    instance = os.getenv('INSTANCE_NAME')
+
+    path = f"/Data/{instance}/dataroot/projects/{workspace_name}/datasets/prediction/{now}/{file_name}"
 
 
     from optimus.helpers.functions import path_is_local, prepare_path_local

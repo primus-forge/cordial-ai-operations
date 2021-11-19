@@ -10,7 +10,10 @@ def df__save_for_training(df, file_name: str, workspace_name: str = "default"):
     if not file_name.endswith(".csv"):
         file_name = f"{file_name}.csv"
 
-    path = f"/dataroot/projects/{workspace_name}/datasets/training/{file_name}"
+    import os
+    instance = os.getenv('INSTANCE_NAME')
+
+    path = f"/Data/{instance}/dataroot/projects/{workspace_name}/datasets/training/{file_name}"
 
     from optimus.helpers.functions import path_is_local, prepare_path_local
     if path_is_local(path):
