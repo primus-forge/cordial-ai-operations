@@ -13,9 +13,10 @@
         "value": "",
         "placeholder": "dataset.csv"
       },
-      "workspace_name": {
+      "project_name": {
         "label": "Workspace",
         "type": "string",
+        "query": "project",
         "hidden": true
       }
     }
@@ -34,9 +35,10 @@
         "value": "",
         "placeholder": "dataset.csv"
       },
-      "workspace_name": {
+      "project_name": {
         "label": "Workspace",
         "type": "string",
+        "query": "project",
         "hidden": true
       }
     }
