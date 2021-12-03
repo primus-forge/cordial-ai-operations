@@ -1,1 +1,1 @@
-easyautoml-operations
+cordial-ai-operations
