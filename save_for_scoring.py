@@ -6,6 +6,8 @@ def df__save_for_scoring(df, file_name: str, project_name: str = "default"):
     if not file_name.endswith(".csv"):
         file_name = f"{file_name}.csv"
 
+    file_name = file_name.split("://")[-1]
+
     from datetime import datetime
     now = datetime.now().strftime("%Y-%m-%d")
 

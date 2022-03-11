@@ -10,6 +10,8 @@ def df__save_for_training(df, file_name: str, project_name: str = "default"):
     if not file_name.endswith(".csv"):
         file_name = f"{file_name}.csv"
 
+    file_name = file_name.split("://")[-1]
+
     import os
     instance = os.getenv('INSTANCE_NAME')
 
