@@ -51,7 +51,7 @@
     "columns": true,
     "path": "TRANSFORMATIONS/ML",
     "order": 2,
-    "enable": {
+    "show": {
       "query": "apiUrl"
     },
     "parameters": {
