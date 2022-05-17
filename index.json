@@ -42,5 +42,28 @@
         "hidden": true
       }
     }
+  },
+  "apply_project_model": {
+    "text": "Apply project model",
+    "function": "df__apply_project_model",
+    "command": "apply_project_model",
+    "preview": false,
+    "columns": true,
+    "path": "TRANSFORMATIONS/ML",
+    "enable": {
+      "query": "apiUrl"
+    },
+    "parameters": {
+      "output_col": {
+        "label": "Output column name",
+        "type": "string"
+      },
+      "project_json_path": {
+        "label": "Workspace",
+        "type": "string",
+        "query": "apiUrl",
+        "hidden": true
+      }
+    }
   }
 }
